@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Generatore Fedele Carte - Cthulhu Confidential</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <input type="text" id="titolo" placeholder="Titolo Carta (es. Ferita lieve)">
+        <select id="tipo">
+            <option value="Vantaggio">Vantaggio</option>
+            <option value="Guai">Guai</option>
+        </select>
+        <select id="durata">
+            <option value="">Durata</option>
+            <option value="Immediata">Immediata</option>
+            <option value="Fine Scena">Fine Scena</option>
+            <option value="Fine Indagine">Fine Indagine</option>
+            <option value="Permanente">Permanente</option>
+        </select>
+        <input type="text" id="destino" placeholder="Destino se non risolta...">
+        <textarea id="testo" placeholder="Descrizione del Guai o Vantaggio..."></textarea>
+        <button onclick="preparaGenerazione()">Genera Fedele</button>
+    </div>
+    
+    <img id="imgFinale" alt="Carta generata apparirà qui">
+</body>
+<script src="script.js"></script>
+</html>
