@@ -1,4 +1,29 @@
-body { background: #1a1a1a; color: white; font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; padding: 40px; }
-.controls { background: #333; padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; width: 300px; margin-bottom: 20px; }
+* { box-sizing: border-box; }
+body { 
+    background: #1a1a1a; 
+    color: white; 
+    font-family: 'Courier New', monospace; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    margin: 0;
+}
+.controls { 
+    background: #333; 
+    padding: 20px; 
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
+}
+.controls input, .controls select, .controls textarea, .controls button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px; /* Impedisce lo zoom automatico al click su iOS */
+}
 canvas { display: none; } /* Il canvas è solo per la generazione interna */
-#imgFinale { max-width: 375px; border: 2px solid white; display: none; } /* Mostra l'immagine quando generata */
+#imgFinale { width: 100%; max-width: 375px; border: 2px solid white; display: none; height: auto; } /* Mostra l'immagine quando generata */
